@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy 20 Month Anniversary ❤️</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#ff4d6d,#ff8fab);
+color:white;
+overflow-x:hidden;
+}
+
+.lock-screen{
+position:fixed;
+width:100%;
+height:100vh;
+background:#111;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;nd
+z-index:999;
+}
+
+.lock-screen h1{
+margin-bottom:20px;
+}
+
+input{
+padding:15px;
+width:220px;
+border:none;
+outline:none;
+border-radius:15px;
+text-align:center;
+font-size:18px;
+}
+
+button{
+margin-top:20px;
+padding:12px 30px;
+border:none;
+border-radius:30px;
+background:#ff4d6d;
+color:white;
+font-size:18px;
+cursor:pointer;
+}
+
+.main{
+display:none;
+padding:40px 20px;
+text-align:center;
+}
+
+h1{
+font-size:3rem;
+margin-bottom:20px;
+animation:heartbeat 1.3s infinite;
+}
+
+@keyframes heartbeat{
+0%{transform:scale(1);}
+25%{transform:scale(1.1);}
+50%{transform:scale(1);}
+75%{transform:scale(1.1);}
+100%{transform:scale(1);}
+}
+
+.section{
+background:rgba(255,255,255,0.15);
+padding:25px;
+margin:25px auto;
+max-width:850px;
+border-radius:25px;
+backdrop-filter:blur(10px);
+}
+
+ul{
+list-style:none;
+}
+
+li{
+margin:10px 0;
+}
+
+footer{
+margin-top:50px;
+font-size:20px;
+}
+
+.heart{
+position:fixed;
+top:-20px;
+font-size:25px;
+animation:fall linear infinite;
+}
+
+@keyframes fall{
+to{
+transform:translateY(110vh);
+}
+}
+</style>
+</head>
+<body>
+
+<div class="lock-screen" id="lock">
+<h1>🔐 Enter Secret Code ❤️</h1>
+
+<input type="password" id="password" placeholder="Enter code">
+
+<button onclick="unlock()">Unlock ❤️</button>
+</div>
+
+<div class="main" id="main">
+
+<h1>❤️ Happy 20 Month Anniversary My Love ❤️</h1>
+
+<div class="section">
+<h2>💌 For My Princess</h2>
+<p>
+20 months… aur phir bhi har din tumse pyaar aur zyada hota ja raha hai. ❤️🥹
+
+Thank you meri jaan, meri best friend, meri safe place aur meri sabse beautiful blessing banne ke liye.
+
+Humne itni saari memories banayi, hasi, masti, fights aur phir unhe milkar solve bhi kiya.
+
+Aur har din mujhe aur zyada yakeen hota hai ki tum meri life ka sabse beautiful part ho.
+</p>
+</div>
+
+<div class="section">
+<h2>💖 My Promises</h2>
+
+<ul>
+<li>❤️ Main hamesha tumhari respect karunga.</li>
+<li>❤️ Main kabhi tumhara saath nahi chhodunga.</li>
+<li>❤️ Main har situation mein tumhare saath rahunga.</li>
+<li>❤️ Main roz tumhe aur zyada pyaar karunga.</li>
+<li>❤️ Main tumhari smile ki wajah banne ki puri koshish karunga.</li>
+<li>❤️ Main humari story ko hamesha special banaunga.</li>
+</ul>
+
+</div>
+
+<div class="section">
+<h2>✨ 50 Reasons Why I Love You ✨</h2>
+
+<p>
+Because you smile like sunshine ☀️<br>
+Because you understand me ❤️<br>
+Because your voice is my favourite sound 🎶<br>
+Because you make everything beautiful 🌹<br>
+Because you love me even when I'm annoying 🥹<br>
+Because you are my home ❤️<br>
+...and 44 more reasons hidden inside my heart forever ♾️
+</p>
+</div>
+
+<div class="section">
+<h2>🥹 Open When You're Sad</h2>
+
+<p>
+Baby, agar kabhi tum sad ho, ya lage ki sab kuch galat ho raha hai, toh bas itna yaad rakhna...
+
+Tum akeli nahi ho.
+
+Main hamesha tumhare saath hoon.
+
+Aur chahe duniya badal jaye, meri feelings tumhare liye kabhi nahi badlegi. ❤️
+</p>
+</div>
+
+<div class="section">
+<h2>❤️ Forever Message ❤️</h2>
+
+<p>
+20 Months Down,
+Forever To Go ♾️
+
+No matter what happens...
+
+I Will Always Choose You.
+
+Again.
+
+And Again.
+
+And Again. ❤️🥹
+</p>
+</div>
+
+<footer>
+Made With Endless Love ❤️
+</footer>
+
+</div>
+
+<script>
+
+function unlock(){
+let pass=document.getElementById("password").value;
+
+if(pass=="2929"){
+document.getElementById("lock").style.display="none";
+document.getElementById("main").style.display="block";
+}
+else{
+alert("Wrong Code 🥹❤️");
+}
+}
+
+setInterval(()=>{
+let heart=document.createElement("div");
+heart.className="heart";
+heart.innerHTML="❤️";
+heart.style.left=Math.random()*100+"vw";
+heart.style.animationDuration=(Math.random()*3+3)+"s";
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},6000);
+
+},300);
+
+</script>
+
+</body>
+</html>
